@@ -11,7 +11,7 @@ var i : Int = 1
 var input = readLine() ?? ""
 var array2: [String] = input.components(separatedBy: " ")
 var array: [Int]  = array2.compactMap{Int($0)}
-var min: Int = array.first!
+var min: Int = Int.max
 var index: Int
 i = 1
 array.enumerated().forEach( {index, value in
